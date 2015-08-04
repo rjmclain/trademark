@@ -1,0 +1,130 @@
+body * {
+  box-sizing: border-box; }
+
+a, a:link {
+  text-decoration: none; }
+
+body, html {
+  height: 100%;
+  background: light-grey;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: black;
+  background: url(../../images/brokenbulb.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  position: relative;
+  color: #fff;
+  font-family: 'Droid Serif', serif; }
+
+.menu-btn {
+  display: inline-block;
+  float: left;
+  margin: 20px;
+  font-size: 2em;
+  cursor: pointer;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  z-index: 20;
+  text-align: center; }
+  .menu-btn.active .bar1 {
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    top: 10px; }
+  .menu-btn.active .bar2 {
+    width: 0; }
+  .menu-btn.active .bar3 {
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    top: 10px; }
+  .menu-btn .bar {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: white;
+    transition: 0.5s; }
+  .menu-btn .bar1 {
+    top: 0; }
+  .menu-btn .bar2 {
+    top: 10px; }
+  .menu-btn .bar3 {
+    top: 20px; }
+
+.container {
+  text-align: center;
+  height: 100%; }
+
+.call-header {
+  text-align: center;
+  top: 0;
+  margin-bottom: 35%;
+  padding-top: 25px; }
+  .call-header a {
+    color: white;
+    font-weight: bold; }
+
+.home-content {
+  display: none; }
+  .home-content h1 {
+    font-family: 'Oswald', serif;
+    color: #243cf2; }
+  .home-content.active {
+    display: block; }
+
+.about-content {
+  display: none;
+  font-size: 32px; }
+  .about-content .right, .about-content .left {
+    margin-bottom: 25px; }
+  .about-content .bottom {
+    margin-top: 25px; }
+  .about-content.active {
+    display: block; }
+
+.contact-content {
+  display: none;
+  font-size: 32px; }
+  .contact-content.active {
+    display: block; }
+
+.menu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+  background: #747277;
+  opacity: 0;
+  font-size: 3em;
+  z-index: 10; }
+  .menu-overlay ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10% 0; }
+    .menu-overlay ul li {
+      margin-top: 25px;
+      cursor: pointer; }
+      .menu-overlay ul li:hover {
+        color: #243cf2; }
+  .menu-overlay.active {
+    display: block;
+    opacity: 0.9;
+    font-size: 2em; }
+
+/*# sourceMappingURL=trademark.css.map */
